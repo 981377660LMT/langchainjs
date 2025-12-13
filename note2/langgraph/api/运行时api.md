@@ -22,7 +22,7 @@ Pregel 将执行过程组织为一系列的“步骤”（Steps），每个步�
 2.  **Execution (执行)**: 并行执行所有被选中的 Actors。**注意**：在此阶段，Actors 写入的数据对其他 Actors 不可见。
 3.  **Update (更新)**: 步骤结束后，统一将 Actors 写入的数据应用到 Channels 中。
 
-这个循环会一直重复，直到没有 Actors 需要执行或达到最大步数限制。
+**这个循环会一直重复，直到没有 Actors 需要执行或达到最大步数限制。**
 
 ### 3. 使用方式
 虽然开发者通常使用高级 API，但 LangGraph 允许直接操作 Pregel：
